@@ -1,0 +1,92 @@
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode nav {
+  background-color: rgba(18, 18, 18, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #333;
+}
+
+.dark-mode nav:hover {
+  background-color: rgba(18, 18, 18, 0.95);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode nav a {
+  color: #ffffff;
+}
+
+.dark-mode .text-gray-700 {
+  color: #e0e0e0;
+}
+
+.dark-mode .text-gray-900 {
+  color: #ffffff;
+}
+
+.dark-mode .text-gray-600 {
+  color: #aaaaaa;
+}
+
+.dark-mode .bg-white {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .bg-gray-50 {
+  background-color: #252525;
+}
+
+.dark-mode .glass-effect {
+  background: rgba(30, 30, 30, 0.7);
+}
+
+.dark-mode .border-gray-100 {
+  border-color: #333;
+}
+
+.dark-mode .border-gray-300 {
+  border-color: #444;
+}
+
+.dark-mode input, .dark-mode select, .dark-mode textarea {
+  background-color: #333;
+  border-color: #555;
+  color: #e0e0e0;
+}
+
+.dark-mode .hero-gradient {
+  background: linear-gradient(45deg, rgba(79, 70, 229, 0.2) 0%, rgba(16, 185, 129, 0.2) 100%);
+}
+
+/* Dark mode toggle button styles */
+.mode-toggle {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  margin-right: 8px;
+}
+
+.mode-toggle:hover {
+  background-color: rgba(79, 70, 229, 0.1);
+}
+
+.dark-mode .mode-toggle:hover {
+  background-color: rgba(79, 70, 229, 0.2);
+}
+
+#mode-icon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.mode-toggle:hover #mode-icon {
+  transform: rotate(30deg);
+}

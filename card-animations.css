@@ -1,0 +1,45 @@
+/* Additional animations for service cards */
+
+/* Particle container styling */
+.particle-container {
+  border-radius: inherit;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Add a subtle glow effect to cards on hover */
+.glass-effect.card-hover:hover {
+  box-shadow: 0 0 25px rgba(79, 70, 229, 0.2);
+}
+
+/* Make the icon bounce on hover */
+.glass-effect.card-hover:hover .w-12 {
+  animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Add a subtle border animation */
+.glass-effect.card-hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  border: 2px solid transparent;
+  background: linear-gradient(45deg, rgba(79, 70, 229, 0.3), rgba(16, 185, 129, 0.3)) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glass-effect.card-hover:hover::after {
+  opacity: 1;
+}
